@@ -93,7 +93,7 @@ void main()
     //get product identity
     const GS1::FieldAI *gtin = gs1.GetByAI("01");
     if (gtin) std::cout << "GTIN = " << gtin->text_body << "\r\n";
-    else std::cout << "GTIN not founs\r\n";
+    else std::cout << "GTIN not found\r\n";
 
     //get product net weight
     const GS1::FieldAI *weight = gs1.GetByAI("310n");
